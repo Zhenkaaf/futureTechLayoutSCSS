@@ -59,3 +59,27 @@
         }
     }
 }
+
+.has-circle-icon {
+    --circleSize: #{rem(52)};
+    --circleMarginLeft: #{rem(20)};
+    position: relative;
+    min-height: var(--circleSize);
+    padding-right: calc(var(--circleSize) + var(--circleMarginLeft));
+    @include laptop {
+        --circleSize: #{rem(44)};
+        --circleMarginLeft: #{rem(14)};
+    }
+    @include mobile {
+        --circleSize: #{rem(40)};
+    }
+    &::after {
+        content: "";
+        @include square(var(--circleSize));
+        @include abs-y;
+        right: 0;
+        background: url("../../icons/arrow-top-right-black.svg") center
+            no-repeat var(--color-accent);
+        border-radius: 50%;
+    }
+}
