@@ -40,8 +40,10 @@
     @include laptop {
       --itemPaddingX: #{rem(40)};
     }
+
     @include tablet-above {
       .bordered-grid__item {
+        position: relative;
         &:nth-child(3n - 2),
         &:nth-child(3n - 1) {
           padding-right: var(--itemPaddingX);
