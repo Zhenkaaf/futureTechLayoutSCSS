@@ -1,6 +1,7 @@
 @use "../helpers/" as *;
 
 .hero-alt {
+  /*  border-bottom: var(--border); */
   &__header {
     padding-top: fluid(130, 40);
     padding-bottom: fluid(150, 40);
