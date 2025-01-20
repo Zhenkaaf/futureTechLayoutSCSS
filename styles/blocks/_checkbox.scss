@@ -30,6 +30,10 @@
       color: var(--color-accent);
       transition-duration: var(--transition-duration);
     }
+
+    &:user-invalid {
+      border-color: var(--color-red);
+    }
   }
   &__label {
     color: var(--color-light);
